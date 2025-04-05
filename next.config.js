@@ -1,4 +1,4 @@
-/** @type {import('next').NextConfig} */
+
 // NODE_ENV は、開発中であれば "development"、本番環境なら "production" が設定
 // isProd には本番環境の場合 true、それ以外の場合は false が入る
 const isProd = process.env.NODE_ENV === "production";
