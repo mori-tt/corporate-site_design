@@ -1,4 +1,4 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
 // NODE_ENV は、開発中であれば "development"、本番環境なら "production" が設定
 // isProd には本番環境の場合 true、それ以外の場合は false が入る
 const isProd = process.env.NODE_ENV === "production";
@@ -7,7 +7,7 @@ const isProd = process.env.NODE_ENV === "production";
 const isLocalPreview = process.env.LOCAL_PREVIEW === "true";
 
 // 静的生成用の設定
-const nextConfig: NextConfig = {
+const nextConfig = {
   output: "export",
   // ローカルプレビュー時はベースパスを空にする
   basePath: isProd && !isLocalPreview ? "/corporate-design" : "",
