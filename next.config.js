@@ -1,4 +1,3 @@
-
 // NODE_ENV は、開発中であれば "development"、本番環境なら "production" が設定
 // isProd には本番環境の場合 true、それ以外の場合は false が入る
 const isProd = process.env.NODE_ENV === "production";
@@ -18,7 +17,6 @@ const nextConfig = {
   },
   // RSCリクエストを無効化し、静的ファイルのみを使用
   // App Routerでの静的エクスポート最適化
-  serverExternalPackages: ["some-package"],
 
   // 404エラーを修正するためのカスタム設定
   trailingSlash: true,
