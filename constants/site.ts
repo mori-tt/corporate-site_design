@@ -101,7 +101,7 @@ export const GSC_VERIFICATION_CODE =
   process.env.NEXT_PUBLIC_GSC_VERIFICATION_CODE || "";
 
 /**
- * アナリティクス設定をまとめたオブジェクト
+ * GA4とGSC設定をまとめたオブジェクト
  */
 export const ANALYTICS = {
   MEASUREMENT_ID: GA_MEASUREMENT_ID,
