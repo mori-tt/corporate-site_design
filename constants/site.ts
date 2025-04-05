@@ -14,7 +14,7 @@ export const SITE_NAME: string = "DESIGN STUDIO";
 // NEXT_PUBLIC_BASE_URLは未設定の場合はデフォルト値を使用
 export const BASE_URL: string =
   process.env.NEXT_PUBLIC_BASE_URL ||
-  "";
+  "https://mori-tt.github.io/corporate-design/";
 
 /**
  * サイトの基本情報
@@ -79,4 +79,31 @@ export const SPECIAL_PAGES = {
     title: "Not Found",
     description: "ページが見つかりませんでした。",
   },
+};
+
+/**
+ * Google Analytics 測定ID
+ * GA4の測定IDを設定してください (G-XXXXXXXXXX形式)
+ * 実際に使用する際は適切なIDを設定してください
+ * 例: 'G-XXXXXXXXXX'
+ */
+export const GA_MEASUREMENT_ID =
+  process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "";
+
+/**
+ * Google Search Console検証コード
+ * Search Consoleから提供される検証コードを設定します
+ * 実際に使用する際は適切なコードを設定してください
+ * メタタグ検証方式を採用（HTMLファイル検証方式は削除）
+ * 例: 'XXXXXXXXXXXXXXXXXXXX'
+ */
+export const GSC_VERIFICATION_CODE =
+  process.env.NEXT_PUBLIC_GSC_VERIFICATION_CODE || "";
+
+/**
+ * アナリティクス設定をまとめたオブジェクト
+ */
+export const ANALYTICS = {
+  MEASUREMENT_ID: GA_MEASUREMENT_ID,
+  VERIFICATION_CODE: GSC_VERIFICATION_CODE,
 };
